@@ -17,5 +17,6 @@ public class TPPGM {
      */
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        PGMPicture image = new PGMPicture();
     }
 }
