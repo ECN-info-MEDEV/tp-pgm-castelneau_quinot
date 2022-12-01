@@ -23,12 +23,19 @@ public class PGMPicture {
     private int width;
     /** length of the picture */
     private int height;
-
+    
+    /**
+     * 
+     */
     public PGMPicture() {
         this.read("aaa.pgm");
         System.out.println(width);
     }
-    
+    /**
+     * 
+     * @param name
+     * @param size 
+     */
     public void creerAleatoire(String name, int size) {
         for (int x = 0; x < size; x++) {
             for (int y = 0; y < size; y++) {
@@ -36,11 +43,17 @@ public class PGMPicture {
         }
     }
                 
-    
+    /**
+     * 
+     */
     public void write() {
         
     }
     
+    /**
+     * 
+     * @param seuil 
+     */
     public void threshold(int seuil) {
         for (int pixel : this.picture) {
             if (pixel < seuil) {
@@ -100,6 +113,7 @@ public class PGMPicture {
     }
 
 //    public void resize(int plus) {
+//        TODO: it doesn't work
 //        for (int i = 0; i < this.width; i += 2) {
 //            for (int j = 0; j < this.height; j += 2) {
 //                this.picture.set(i*this.width + j) = 0;
