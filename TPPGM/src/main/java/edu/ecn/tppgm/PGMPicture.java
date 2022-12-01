@@ -26,7 +26,7 @@ public class PGMPicture {
             for (int y = 0; y < size; y++) {
             }
         }
-        
+    }
                 
     
     public void write() {
