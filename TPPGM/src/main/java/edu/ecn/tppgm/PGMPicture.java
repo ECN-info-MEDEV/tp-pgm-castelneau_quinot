@@ -24,6 +24,9 @@ public class PGMPicture {
     public void creerAleatoire(String name, int size) {
         for (int x = 0; x < size; x++) {
             for (int y = 0; y < size; y++) {
+            }
+        }
+        
                 
     
     public void write() {
@@ -81,6 +84,9 @@ public class PGMPicture {
         for (int i = 0; i < histo.size(); i++) {
             if (histo.get(i) != 0) {
                 System.out.println("Pixels a " + i + ": " + histo.get(i));
+            }
+        }
+    }
 
     public void resize(int plus) {
         for (int i = 0; i < this.width; i += 2) {
