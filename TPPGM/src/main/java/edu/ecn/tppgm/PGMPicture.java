@@ -10,4 +10,30 @@ package edu.ecn.tppgm;
  */
 public class PGMPicture {
     
+    
+    public void write() {
+        
+    }
+    
+    public void threshold(int seuil) {
+        for (int pixel : this.picture) {
+            if (pixel < seuil) {
+                pixel = 0;
+            }
+        }
+    }
+    
+    public void resize(int plus) {
+        for (int i = 0; i < this.width; i += 2) {
+            for (int j = 0; j < this.height; j += 2) {
+                this.picture.set(i*this.width + j) = 0;
+            }
+            
+        }
+        for (int i = 1; i < this.width; i += 2) {
+            for (int j = 0; j < this.height; j++) {
+                this.picture.set(i*this.width + j) = 0;
+            }
+        }
+    }
 }
